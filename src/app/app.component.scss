@@ -1,0 +1,28 @@
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: monospace;
+}
+.box {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-gap: 2rem;
+  width: 80%;
+  height: 80%;
+
+  div {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+}
+.display {
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+  margin: 0 auto;
+}

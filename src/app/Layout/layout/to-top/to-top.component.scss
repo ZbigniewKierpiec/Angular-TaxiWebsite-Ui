@@ -1,0 +1,26 @@
+/* Styles for a fixed position button back to top */
+.btn {
+  position: fixed;
+  bottom: 0;
+  right: 25px;
+  bottom: 20px;
+  width: 32px;
+  height: 35px;
+  background-color: var(--back-to-top-background);
+  background-color: #efc050;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5rem);
+  transition: all 0.3s linear;
+  /* Active state for the button */
+  &.active {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
