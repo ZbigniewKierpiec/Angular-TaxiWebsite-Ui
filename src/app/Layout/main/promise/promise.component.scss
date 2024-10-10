@@ -1,8 +1,7 @@
-
 .mainPromise {
   width: 100%;
   height: 100vh;
-  background-color: gray;
+  background-color: yellow;
   &__promise {
     width: 100%;
     height: 100vh;
@@ -13,36 +12,50 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-
+    align-items: center;
     margin-bottom: 10px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    &__Txt {
+      padding: 0 10rem;
+      width: 70%;
+      height: 75%;
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      h2,
+      a {
+        // font-family: "Roboto", sans-serif;
+
+        color: whitesmoke;
+        text-align: center;
+        line-height: 4rem;
+      }
+      &__h1 {
+        font-size: 4.5rem;
+        color: whitesmoke;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      &__h2 {
+        font-size: 2.7rem;
+        font-weight: 100;
+        font-style: italic;
+      }
+    }
   }
-  &__Txt {
-    text-align: center;
-    display: flex;
-    flex-basis: 80%;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-around;
-    color: whitesmoke;
-    font-family: "Lato", sans-serif;
-  }
-  &__h2 {
-    font-size: 1.5em;
-    line-height: 3em;
-    border-bottom: 3px solid red;
-  }
+
   &__a {
     display: block;
     text-decoration: none;
-    font-size: 30px;
-    padding: 5px;
+    font-size: 1.7rem;
+    padding: 2rem;
     position: absolute;
     text-transform: uppercase;
-    bottom: 20px;
+    bottom: 6rem;
     background-color: rgba(0, 0, 0, 0.836);
     color: white;
     overflow: hidden;
@@ -57,8 +70,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, #0c002b, red);
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #EFC050);
   animation: animate1 2s linear infinite;
   animation-delay: 1s;
 }
@@ -79,7 +92,7 @@
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(to bottom, #0c002b, red);
+  background: linear-gradient(to bottom, #0c002b,#EFC050);
   animation: animate2 2s linear infinite;
 }
 @keyframes animate2 {
@@ -97,8 +110,8 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 4px;
-  background: linear-gradient(to left, #0c002b, red);
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #EFC050);
   animation: animate3 2s linear infinite;
   animation-delay: 1s;
 }
@@ -117,7 +130,7 @@
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(to top, #0c002b, red);
+  background: linear-gradient(to top, #0c002b,#EFC050);
   animation: animate4 2s linear infinite;
   animation-delay: 2s;
 }
